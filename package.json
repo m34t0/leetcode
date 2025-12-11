@@ -11,7 +11,7 @@
     "typescript": "^5"
   },
   "scripts": {
-    "lint": "eslint --fix ./problems/**/*",
+    "lint": "eslint --fix ./problems/**/*.ts",
     "lint-tools": "eslint --fix ./eslint.config.js"
   }
 }

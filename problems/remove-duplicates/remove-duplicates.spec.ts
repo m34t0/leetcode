@@ -3,9 +3,7 @@ import { removeDuplicates } from './remove-duplicates';
 
 // k is length of nums without removed elements
 function judge(nums: (number | string)[], k: number, expected: number[]) {
-	return k === expected.length && nums.slice(0, expected.length).every((num, index) => {
-		return num === expected[index];
-	});
+	return k === expected.length && nums.slice(0, expected.length).every((num, index) => num === expected[index]);
 }
 
 describe('removeDuplicates', () => {
