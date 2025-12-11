@@ -1,0 +1,8 @@
+https://leetcode.com/problems/remove-element/description/
+
+Two pointers solution. One goes up from the start of the array, the second goes down from
+the end. When the first pointer meets number we need to delete it stops. After that the
+second pointer search value that not equal the number. As soon as it is found, number from
+the first pointer and the second pointer are swap. If second pointer doesn't find number that
+not equal the number we need to delete and reach the first pointer - then algorithm
+stops and returns current 'k' value.

@@ -1,0 +1,4 @@
+https://leetcode.com/problems/power-of-four/description/
+
+Here I use formula for changing the base of a logarithm to find the logarithm of n with the base of 4.
+If it is an integer it means that n is the power of 4.

@@ -1,0 +1,17 @@
+{
+  "name": "leetcode",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@typescript-eslint/parser": "^8.48.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "scripts": {
+    "lint": "eslint --fix ./problems/**/*",
+    "lint-tools": "eslint --fix ./eslint.config.js"
+  }
+}
