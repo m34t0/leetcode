@@ -29,6 +29,7 @@ export default [
 			'block-spacing': ['error', 'always'],
 			'brace-style': ['error', '1tbs', { allowSingleLine: true }],
 			'camelcase': 'error',
+			'comma-spacing': ['error', { 'before': false, 'after': true }],
 
 			/* ==== Переменные и константы ==== */
 			'no-var': 'error',

@@ -12,6 +12,8 @@
   },
   "scripts": {
     "lint": "eslint --fix ./problems/**/*.ts",
-    "lint-tools": "eslint --fix ./eslint.config.js"
+    "lint-tools": "eslint --fix ./eslint.config.js",
+    "test": "bun test",
+    "test-watch": "bun test --watch"
   }
 }

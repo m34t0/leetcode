@@ -1,5 +1,5 @@
 https://leetcode.com/explore/learn/card/fun-with-arrays/526/deleting-items-from-an-array/3248/
 
-If we walk through whole array of numbers and every time the number change we increment
-index, we get the length of array without duplicates. To solve this problem we also need
-to substitute a number in the current index by new value before incrementing.
+As far as we know, that array is sorted. If we walk through whole array of numbers
+and every time the number change we increment index, we get the length of array without duplicates.
+To solve this problem we also need to substitute a number in the current index by new value before incrementing.

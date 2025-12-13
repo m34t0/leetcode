@@ -7,6 +7,12 @@ function judge(nums: (number | string)[], k: number, expected: number[]) {
 }
 
 describe('removeDuplicates', () => {
+	/*
+	 * Result is representing first elements
+	 * without duplicates. Elements after
+	 * k don't matter. k is representing the
+	 * length of array without duplicates
+	 */
 	test('[0,0,0,0,0], result is [0], return 1', () => {
 		const nums = [0, 0, 0, 0, 0];
 		const expected = [0];

@@ -16,6 +16,12 @@ function judge(nums: number[], k: number, expected: number[]) {
 }
 
 describe('removeElement', () => {
+	/*
+	 * Order of elements in resulting array
+	 * isn't important. Judge will sort both
+	 * result and expected arrays to make
+	 * judgement easier
+	 */
 	test('[1,2,3], 3, result is [1,2]', () => {
 		const nums = [1, 2, 3];
 		const val = 3;
@@ -24,10 +30,18 @@ describe('removeElement', () => {
 		expect(judge(nums, removeElement(nums, val), expected)).toBeTrue();
 	});
 
-	test('[1,3,4,4,6,5,10,3,4,4], 4, result is [1,3,3,5,6,10]', () => {
+	test('[1,3,4,4,6,5,10,3,4,4], 4, result (sorted) is [1,3,3,5,6,10]', () => {
 		const nums = [1, 3, 4, 4, 6, 5, 10, 3, 4, 4];
 		const val = 4;
 		const expected = [1, 3, 3, 5, 6, 10];
+
+		expect(judge(nums, removeElement(nums, val), expected)).toBeTrue();
+	});
+
+	test('[5,5,7,8,3,3,21,21,37,3,9,9], 3, result (sorted) is [5,5,7,8,9,9,21,21,37]', () => {
+		const nums = [5, 5, 7, 8, 3, 3, 21, 21, 37, 3, 9, 9];
+		const val = 3;
+		const expected = [5, 5, 7, 8, 9, 9, 21, 21, 37];
 
 		expect(judge(nums, removeElement(nums, val), expected)).toBeTrue();
 	});

@@ -6,7 +6,7 @@ function judge(num: number, result: boolean): boolean {
 
 	const powersOfFour: number[] = [];
 
-	for (let i = 2; i < 777; i++) {
+	for (let i = 1; i < 1000; i++) {
 		powersOfFour.push(Math.pow(4, i));
 	}
 
@@ -15,6 +15,11 @@ function judge(num: number, result: boolean): boolean {
 
 describe('isPowerOfFour', () => {
 	test('16, result is true', () => {
+		/*
+		 * If judge returns true, it means that
+		 * isPowerOfFour impl is right.
+		 * For those, who is confused by .toBeTrue()
+		 */
 		expect(judge(16, isPowerOfFour(16))).toBeTrue();
 	});
 
