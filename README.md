@@ -9,11 +9,13 @@ Inside each subdirectories there is a minimum three files.
 One for solution, one for test and one for explaining and links.
 
 Example of structure:
+```
 problems
     remove-duplicates
         solution.txt
         remove-duplicates.spec.ts
         remove-duplicates.ts
+```
 
 ### Links
 https://leetcode.com/u/m3at/ - my profile
