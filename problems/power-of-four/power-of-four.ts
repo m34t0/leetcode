@@ -4,4 +4,4 @@ export function isPowerOfFour(n: number): boolean {
 	const log = Math.log(n) / Math.log(4);
 
 	return Number.isInteger(log);
-};
+}

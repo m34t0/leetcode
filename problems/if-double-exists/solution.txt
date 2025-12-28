@@ -1,0 +1,5 @@
+https://leetcode.com/explore/learn/card/fun-with-arrays/527/searching-for-items-in-an-array/3250/
+
+Solution with the hash table. We loop through array of numbers. Each time we
+encounter new number we want to know if this number is double of some
+previous number or it is the root of some previous double.
