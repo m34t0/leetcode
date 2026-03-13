@@ -1,0 +1,22 @@
+https://leetcode.com/problems/valid-mountain-array/description/
+
+The solution handles one exception: it is when arr.length < 3. It is impossible
+to model valid mountain with this length.
+
+To find out if arr is a valid mountain we need to check if there are an ascending
+and descending and that previous and current numbers are passing the checks in
+each iteration:
+1) Prev and curr should not be equal
+2) If asc - prev should be less than curr
+3) If desc - prev should be greater than curr
+
+But there is one tricky trick here. Inside each iteration we have to check
+asc or desc only. The purpose of these two variables is in determination
+of presence asc and desc. So in valid arr there is a point where asc and
+desc will be both true. So we can't write:
+
+if (asc && lst > curr) return false;
+
+if (desc && lst < curr) return false;
+
+(Of course we can, but only if we add more ifs which is making our code much bigger)
